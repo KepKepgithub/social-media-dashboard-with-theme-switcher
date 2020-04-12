@@ -1,0 +1,21 @@
+
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size (Overview Card Headings): 14px
+body{
+    font-size: 14px;
+}
+
+// ### Font
+
+// - Family: [Inter](https://fonts.google.com/specimen/Inter)
+// - Weights: 400, 700
+// font-family: 'Inter', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
