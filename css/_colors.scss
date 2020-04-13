@@ -30,6 +30,7 @@ $toggle_light: hsl(230, 22%, 74%);
 --card_background_dark: hsl(228, 28%, 20%);
 --sub_text_dark: hsl(228, 34%, 66%);
 --main_text_dark: hsl(0, 0%, 100%);
+--toggle_dark: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
 
 // #### Light Theme
 
@@ -38,6 +39,7 @@ $toggle_light: hsl(230, 22%, 74%);
 --card_background_light: hsl(227, 47%, 96%);
 --sub_text_light: hsl(228, 12%, 44%);
 --main_text_light: hsl(230, 17%, 14%);
+--toggle_light: hsl(230, 22%, 74%);
 
 // Default theme
 
@@ -46,5 +48,6 @@ $toggle_light: hsl(230, 22%, 74%);
 --card_background:var(--card_background_light);
 --sub_text:var(--sub_text_light);
 --main_text:var(--main_text_light);
+--toggle:var(--toggle_light);
 
 }

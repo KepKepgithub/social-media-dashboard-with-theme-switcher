@@ -1,0 +1,57 @@
+@media (min-width:300px){
+    .big_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--card_background);
+
+        padding: 2rem 0;
+
+        &__wrap{
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        &__heading{
+            color: var(--sub_text);
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+
+            margin-bottom: 1rem;
+
+            img{
+                margin-right: .5rem;
+                margin-left: -.5rem;
+                width: 1.5rem;
+            }
+        }
+        &__big_number{
+            font-size: 4rem;
+            font-weight: bold;
+            color: var(--main_text);
+        }
+        &__followers{
+            color:var(--sub_text);
+            text-transform: uppercase;
+            letter-spacing: .35rem;
+            margin-bottom: 1.75rem;
+        }
+        &__new_followers{
+            color: $lime_green;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            img{
+                margin-right: .2rem;
+                margin-left: -.2rem;
+                margin-top: .125rem;
+            }
+        }
+        &:nth-child(4){
+            .big_card__new_followers{
+                color: $bright_red;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.theme{
+    &__checkbox{
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+
+        &:focus ~ .page_wrap{
+            .header{
+                .theme__label{
+                    background:var(--toggle_dark);
+                    filter: brightness(1.2);
+                }
+            }
+        }
+    }
+    &__checkbox:checked ~ .page_wrap{
+        --background:var(--background_dark);
+        --background_pattern:var(--background_pattern_dark);
+        --card_background:var(--card_background_dark);
+        --sub_text:var(--sub_text_dark);
+        --main_text:var(--main_text_dark);
+        --toggle:var(--toggle_dark);
+    }
+    &__checkbox:checked ~ .page_wrap{
+        .theme__label{
+            &::before{
+                transform: translateX(-29px);
+            }
+        }
+    }
+}
+// The speed of theme switching
+$theme_speed: 200ms;
+.page_wrap, .background_pattern, .big_card, .small_card, .background, h1, h2, p, span{
+    transition: background $theme_speed, color $theme_speed, background-color $theme_speed;
+}
