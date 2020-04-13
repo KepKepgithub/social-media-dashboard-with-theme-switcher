@@ -61,3 +61,22 @@
         }
     }
 }
+
+@media (min-width:1024px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__text_wrap{
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .theme{
+        &__text{
+            margin-right: 1rem;
+        }
+    }
+}

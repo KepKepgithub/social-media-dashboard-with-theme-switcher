@@ -1,0 +1,70 @@
+@media (min-width:300px){
+    .small_card{
+        background: var(--card_background);
+        padding: 1.5em;
+        border-radius: .5rem;
+
+        &:hover,&:active{
+            filter: var(--card_hover);
+            cursor: pointer;
+        }
+        
+        &__wrap{
+            display: grid;
+            gap: 1rem;
+            padding-bottom: 1em;
+        }
+        &__heading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+            color: var(--sub_text);
+            font-size: 1rem;
+
+            margin-bottom: 1.25rem;
+
+            img{
+                width: 1.5rem;
+            }
+        }
+        &__number_wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__number{
+            &--big{
+                color: var(--main_text);
+                font-weight: bold;
+                font-size: 2rem;
+            }
+            &--small{
+                // the default for positive/increese;
+                color: $lime_green;
+                img{
+                    margin-bottom: .15rem;
+                    margin-right: .2rem;
+                }
+            }
+        }
+        &:nth-child(2),&:nth-last-child(1),&:nth-last-child(2){
+            .small_card__number{
+                &--small{
+                    color: $bright_red;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1024px){
+    .small_card{
+        &__wrap{
+            grid-template-columns: repeat(4,1fr);
+            gap: 1.75rem;
+            grid-row-gap: 1.25rem; 
+        }
+    }
+}

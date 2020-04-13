@@ -3,20 +3,12 @@
         opacity: 0;
         position: absolute;
         pointer-events: none;
-
-        &:focus ~ .page_wrap{
-            .header{
-                .theme__label{
-                    background:var(--toggle_dark);
-                    filter: brightness(1.2);
-                }
-            }
-        }
     }
     &__checkbox:checked ~ .page_wrap{
         --background:var(--background_dark);
         --background_pattern:var(--background_pattern_dark);
         --card_background:var(--card_background_dark);
+        --card_hover:var(--card_hover_dark);
         --sub_text:var(--sub_text_dark);
         --main_text:var(--main_text_dark);
         --toggle:var(--toggle_dark);
